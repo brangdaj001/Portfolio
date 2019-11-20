@@ -1,0 +1,67 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin:0;
+  padding:0;
+  background: radial-gradient(circle, rgba(176,52,63,1) 0%, rgba(176,52,63,1) 44%, rgba(255,255,255,1) 100%);
+}
+
+.header {
+  padding: 70px;
+  margin:0;
+  text-align: center;
+  background-image: url("https://cdn.glitch.com/9ed3d8a4-9b6e-4024-8d3b-df794a6c6ed2%2FIMG_3613.jpg?v=1561556707900");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-size: 30px;
+  font-family: 'Allan', cursive;
+  text-shadow: 15px 15px 15px black;
+}
+h1{
+  font-size: 85px;
+}
+.container{
+  margin-top:50px;
+  text-align: center;
+}
+.btn{
+  width:300px;
+  height:100px;
+  border: 3px solid #ffffff;
+  background: none;
+  padding: 10px 20px;
+  font-size: 40px;
+  font-family: "Allan", cursive;
+  cursor: pointer;
+  margin: 80px 50px 0px 50px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 20px 20px 20px black;
+
+}
+.btn1{
+  border-color:#fff;
+  color: #fff;
+}
+.btn1:hover{
+  border-color:#000;
+  color: #000;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #fdf733;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before{
+  height: 180%;
+}
